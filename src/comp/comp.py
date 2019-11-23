@@ -65,8 +65,7 @@ print("Ages plus 10:")
 d = [
 ]
 for human in humans:
-    if(human.age > 10):
-        d.append(human.age)
+    d.append(human.age + 10)
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
@@ -74,7 +73,7 @@ print(d)
 print("Name hyphen age:")
 e = []
 for human in humans:
-    e.append(f'{human.name} - {human.age}')
+    e.append(f'{human.name}-{human.age}')
 print(e)
 
 # Write a list comprehension that creates a list of tuples containing name and
@@ -83,7 +82,7 @@ print(e)
 print("Names and ages between 27 and 32:")
 f = []
 for human in humans:
-    if(human.age > 27 and human.age < 32):
+    if(human.age > 27 and human.age <= 32):
         tup = (human.name, human.age)
         f.append(tup)
 print(f)
