@@ -33,7 +33,7 @@ def cityreader(cities=[]):
     # TODO Implement the functionality to read from the 'cities.csv' file
     # For each city record, create a new City instance and add it to the
     # `cities` list
-    with open("./src/cityreader/cities.csv") as csv_file:
+    with open("C:\Program Files\Git\projects\Sprint-Challenge--Intro-Python\src\cityreader\cities.csv") as csv_file:
         reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
         for row in reader:
